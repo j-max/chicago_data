@@ -1,14 +1,23 @@
 import sys
 import os
-
+import json
 import pandas as pd
+import requests
+
 
 base_dir = os.getcwd()
 repo_name = "chicago_data"
 root_path =base_dir.split(repo_name)[0] + repo_name 
+
 sys.path.append(root_path)
 from src.data_portal_api import get_portal_data
 from src.schools.schools import calculate_total_survey_score
+
+with open(root_path +"/schools/data_portal_endpoints.json", 'r') as f:
+    data_portal_endpoints = json.load(f)
+
+endpoint = data_portal_endpoints['progress_reports']['pr_202425']
+pr_df_2425 = get_portal_data(endpoint)
 
 progress_report_2324= 'https://data.cityofchicago.org/resource/2dn2-x66j.json'
 pr_df = get_portal_data(progress_report_2324)

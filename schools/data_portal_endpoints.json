@@ -1,0 +1,13 @@
+{"progress_reports":
+        {
+            "pr_202324": "https://data.cityofchicago.org/resource/2dn2-x66j.json",
+            "pr_202425": "https://data.cityofchicago.org/resource/twrw-chuq.json" 
+
+        },
+    "school_profile":
+        {
+            "sp_202324": "https://data.cityofchicago.org/resource/cu4u-b4d9.json",
+            "sp_202425": "https://data.cityofchicago.org/api/v3/views/3dhs-m3w4/query.json"
+
+        }
+}
