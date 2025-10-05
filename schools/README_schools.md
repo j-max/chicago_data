@@ -5,8 +5,10 @@ For good housekeeping, I am storing the endpoints in a json file within the scho
 
 ## School Profile
 
-## Prograess Report
-
+## Progress Report
+These files have a two certifications:
+  - Healthy Schools
+  - Creative Schools
 
 
 # Using Postgresql
